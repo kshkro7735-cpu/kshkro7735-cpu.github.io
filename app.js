@@ -353,3 +353,61 @@ const mapPane = document.getElementById('map-info-pane');
 if (mapPane) {
   mapPane.style.transition = "opacity 0.2s ease";
 }
+
+// ==========================================
+// 7. EmailJS Form Integration
+// ==========================================
+// IMPORTANT: Please replace these with your actual EmailJS credentials
+const EMAILJS_PUBLIC_KEY = "Iz-7euLuUb-9D1QuT"; 
+const EMAILJS_SERVICE_ID = "service_efgedam";
+const EMAILJS_TEMPLATE_ID = "template_jrcdw25";
+
+// Initialize EmailJS
+if (typeof emailjs !== 'undefined') {
+  emailjs.init({
+    publicKey: EMAILJS_PUBLIC_KEY,
+  });
+}
+
+const contactForm = document.getElementById('contact-form');
+const contactStatus = document.getElementById('contact-status');
+
+if (contactForm) {
+  contactForm.addEventListener('submit', function(event) {
+    event.preventDefault();
+    
+    // Check if credentials are placeholders
+    if (EMAILJS_PUBLIC_KEY === "YOUR_PUBLIC_KEY" || EMAILJS_SERVICE_ID === "YOUR_SERVICE_ID" || EMAILJS_TEMPLATE_ID === "YOUR_TEMPLATE_ID") {
+      showStatus("EmailJS 설정이 완료되지 않았습니다. app.js 파일 상단에 Public Key, Service ID, Template ID를 입력해 주세요.", "error");
+      return;
+    }
+
+    // Set time parameter dynamically in 'YYYY-MM-DD HH:mm:ss' format
+    const now = new Date();
+    const formattedTime = now.getFullYear() + '-' + 
+      String(now.getMonth() + 1).padStart(2, '0') + '-' + 
+      String(now.getDate()).padStart(2, '0') + ' ' + 
+      String(now.getHours()).padStart(2, '0') + ':' + 
+      String(now.getMinutes()).padStart(2, '0') + ':' + 
+      String(now.getSeconds()).padStart(2, '0');
+    
+    document.getElementById('contact-time').value = formattedTime;
+
+    showStatus("문의를 전송하는 중입니다...", "sending");
+
+    // Send using emailjs.sendForm
+    emailjs.sendForm(EMAILJS_SERVICE_ID, EMAILJS_TEMPLATE_ID, this)
+      .then(() => {
+        showStatus("문의가 성공적으로 전송되었습니다! 메일 수신함을 확인해 주세요.", "success");
+        contactForm.reset();
+      }, (error) => {
+        console.error('Failed to send email:', error);
+        showStatus("전송에 실패했습니다. 다시 시도해 주세요. 오류: " + JSON.stringify(error), "error");
+      });
+  });
+}
+
+function showStatus(message, type) {
+  contactStatus.textContent = message;
+  contactStatus.className = "contact-status " + type;
+}
