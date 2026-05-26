@@ -411,3 +411,33 @@ function showStatus(message, type) {
   contactStatus.textContent = message;
   contactStatus.className = "contact-status " + type;
 }
+
+// ==========================================
+// 8. Educational Notice Modal Logic
+// ==========================================
+document.addEventListener('DOMContentLoaded', () => {
+  const noticeModal = document.getElementById('notice-modal');
+  const closeModalBtn = document.getElementById('close-modal-btn');
+  
+  if (noticeModal && closeModalBtn) {
+    // Show modal on load
+    setTimeout(() => {
+      noticeModal.classList.add('active');
+      document.body.style.overflow = 'hidden'; // disable background scroll
+    }, 500); // 0.5s delayed load for transition effect
+    
+    // Close modal click event
+    closeModalBtn.addEventListener('click', () => {
+      noticeModal.classList.remove('active');
+      document.body.style.overflow = ''; // restore background scroll
+    });
+    
+    // Close modal on background click
+    noticeModal.addEventListener('click', (e) => {
+      if (e.target === noticeModal) {
+        noticeModal.classList.remove('active');
+        document.body.style.overflow = '';
+      }
+    });
+  }
+});
