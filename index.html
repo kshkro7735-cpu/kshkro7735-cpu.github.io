@@ -1,0 +1,536 @@
+<!DOCTYPE html>
+<html lang="ko" data-theme="light">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>한반도의 정중앙, 청정 양구에 오신 것을 환영합니다</title>
+  <meta name="description" content="청정 자연의 기운을 그대로 품은 강원특별자치도 양구군의 주요 명소인 두타연, 펀치볼, 박수근미술관, 국토정중앙천문대와 우수한 특산물을 소개합니다.">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <!-- ==========================================
+       HEADER & NAVIGATION
+       ========================================== -->
+  <header>
+    <div class="navbar">
+      <a href="#home" class="logo">
+        YANGGU<span>.</span>
+      </a>
+      
+      <nav>
+        <ul class="nav-menu" id="nav-menu">
+          <li><a href="#home" class="nav-link active">홈</a></li>
+          <li><a href="#about" class="nav-link">양구 소개</a></li>
+          <li><a href="#destinations" class="nav-link">추천 명소</a></li>
+          <li><a href="#specialties" class="nav-link">특산물</a></li>
+          <li><a href="#quiz" class="nav-link">여행 테스트</a></li>
+          <li><a href="#gallery" class="nav-link">갤러리</a></li>
+          <li><a href="#map" class="nav-link">관광 가이드</a></li>
+        </ul>
+      </nav>
+      
+      <div class="nav-actions">
+        <button class="theme-toggle-btn" id="theme-toggle" aria-label="테마 전환">
+          <!-- Light Mode Icon (Moon) by default -->
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+            <path d="M12.3 22c5.07 0 9.2-3.79 9.7-8.63.12-1.22-.96-2.18-2.13-1.83-3.07.93-6.24-1.2-6.75-4.35-.24-1.52.75-2.85 2.18-3.07.69-.11 1-.84.62-1.39C14.47 1.8 12.8 1 11 1 5.48 1 1 5.48 1 11s4.48 10 10 10c.44 0 .87-.03 1.3-.1z"/>
+          </svg>
+        </button>
+        <button class="hamburger" id="hamburger" aria-label="메뉴 열기">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- ==========================================
+       HERO SECTION
+       ========================================== -->
+  <section class="hero" id="home">
+    <div class="hero-bg"></div>
+    <div class="hero-overlay"></div>
+    <div class="hero-content">
+      <h1 class="hero-title">한반도의 정중앙,<br>청정 자연의 숨결을 품은 <span>양구</span></h1>
+      <p class="hero-subtitle">가장 때 묻지 않은 숲과 호수, 그리고 예술의 향기가 스며든 이곳으로 여러분을 초대합니다.</p>
+      <a href="#about" class="hero-btn">양구 여행 시작하기</a>
+    </div>
+    <a href="#about" class="scroll-down" aria-label="아래로 스크롤">
+      <svg viewBox="0 0 24 24">
+        <path d="M7.41 8.59L12 13.17l4.59-4.58L18 10l-6 6-6-6 1.41-1.41z"/>
+      </svg>
+    </a>
+  </section>
+
+  <!-- ==========================================
+       ABOUT SECTION
+       ========================================== -->
+  <section class="container reveal" id="about">
+    <div class="about-grid">
+      <div class="about-text">
+        <span class="section-tag">About Yanggu</span>
+        <h2 class="section-title">국토정중앙, 양구</h2>
+        <p>양구군은 한반도의 공식적인 지리적 중심지로, 평화와 생태의 가치가 완벽히 보존된 신비로운 고장입니다. DMZ와 인접하여 수십 년간 외부의 손길이 닿지 않은 태고의 자연경관을 고스란히 안고 있습니다.</p>
+        <div class="about-highlight">
+          "금강산으로 가는 길목이자, 맑은 물과 맑은 공기가 온전히 보존된 대한민국 생태 관광의 허브"
+        </div>
+        <p>자연뿐 아니라 소박하지만 깊은 올림을 주는 근현대 미술의 거장 박수근 화백의 고향이며, 밤하늘의 쏟아지는 우주를 관찰할 수 있는 국토정중앙천문대까지 다채로운 문화가 살아 숨 쉽니다.</p>
+      </div>
+      <div class="about-features">
+        <div class="feature-card">
+          <div class="feature-icon">🧭</div>
+          <h3>국토 정중앙</h3>
+          <p>한반도 4극점(독도, 평안북도 마안도, 제주도 마라도, 함경북도 유포리)을 기준으로 동경 127°58′20″, 북위 38°03′40″에 해당하는 한반도의 배꼽입니다.</p>
+        </div>
+        <div class="feature-card">
+          <div class="feature-icon">🌲</div>
+          <h3>DMZ 청정생태</h3>
+          <p>민간인 출입 통제선 부근의 때 묻지 않은 계곡과 울창한 산림이 펼쳐져 천연기념물과 다양한 희귀 동식물이 평화롭게 서식합니다.</p>
+        </div>
+        <div class="feature-card">
+          <div class="feature-icon">🎨</div>
+          <h3>예술과 인문</h3>
+          <p>향토적이면서 강인한 한국의 미를 화폭에 담아낸 박수근 화백의 발자취가 서려 있어 문화 예술적 감수성을 일깨웁니다.</p>
+        </div>
+        <div class="feature-card">
+          <div class="feature-icon">✨</div>
+          <h3>청정 밤하늘</h3>
+          <p>빛 공해가 차단된 도심 밖의 청정 구역으로 밤이면 눈부시게 밝은 은하수와 별들의 파노라마를 직접 볼 수 있습니다.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==========================================
+       DESTINATIONS SECTION (Cards with hover animations)
+       ========================================== -->
+  <section class="container reveal" id="destinations">
+    <div class="text-center">
+      <span class="section-tag">Must Visit</span>
+      <h2 class="section-title">꼭 가봐야 할 명소</h2>
+      <p class="section-desc">양구를 대표하는 4곳의 아름답고 가치 있는 관광 명소들을 소개합니다.</p>
+    </div>
+    
+    <div class="destination-grid">
+      <!-- Card 1: 두타연 -->
+      <div class="dest-card">
+        <div class="dest-img-container">
+          <img src="assets/dutayeon.png" alt="두타연" class="dest-img">
+          <span class="dest-tag">DMZ 청정구역</span>
+        </div>
+        <div class="dest-info">
+          <h3>두타연 <span>渓谷</span></h3>
+          <p>민간인 통제선 북방에 위치하여 오랜 세월 비경을 간직한 생태 보존지입니다. 기암괴석과 열목어가 헤엄치는 투명한 계곡을 따라 걸으며 상쾌한 숲의 기운을 얻을 수 있습니다.</p>
+          <a href="#map" class="dest-link">
+            자세히 보기 
+            <svg viewBox="0 0 24 24"><path d="M8.59 16.59L13.17 12 8.59 7.41 10 6l6 6-6 6-1.41-1.41z"/></svg>
+          </a>
+        </div>
+      </div>
+      
+      <!-- Card 2: 펀치볼 -->
+      <div class="dest-card">
+        <div class="dest-img-container">
+          <img src="assets/punchbowl.png" alt="해안분지 펀치볼" class="dest-img">
+          <span class="dest-tag">지리적 신비</span>
+        </div>
+        <div class="dest-info">
+          <h3>해안분지 펀치볼</h3>
+          <p>산정상에서 내려다보면 마치 커다란 그릇 모양을 띠고 있는 한국 유일의 대분지입니다. 신비로운 분지 지형 아래 안보 유적지와 사계절 푸른 농가 풍경이 그림처럼 조화를 이룹니다.</p>
+          <a href="#map" class="dest-link">
+            자세히 보기 
+            <svg viewBox="0 0 24 24"><path d="M8.59 16.59L13.17 12 8.59 7.41 10 6l6 6-6 6-1.41-1.41z"/></svg>
+          </a>
+        </div>
+      </div>
+      
+      <!-- Card 3: 박수근미술관 -->
+      <div class="dest-card">
+        <div class="dest-img-container">
+          <img src="assets/museum.png" alt="박수근미술관" class="dest-img" style="filter: grayscale(40%);">
+          <span class="dest-tag">문화와 미술</span>
+        </div>
+        <div class="dest-info">
+          <h3>박수근미술관</h3>
+          <p>한국 화단에 독보적인 족적을 남긴 박수근 화백의 생가터에 세워졌으며 자연 속에 녹아든 미술관의 기하학적인 조형미와 거장의 애틋한 유작들이 마음을 따뜻하게 물들입니다.</p>
+          <a href="#map" class="dest-link">
+            자세히 보기 
+            <svg viewBox="0 0 24 24"><path d="M8.59 16.59L13.17 12 8.59 7.41 10 6l6 6-6 6-1.41-1.41z"/></svg>
+          </a>
+        </div>
+      </div>
+      
+      <!-- Card 4: 국토정중앙천문대 -->
+      <div class="dest-card">
+        <div class="dest-img-container">
+          <img src="assets/observatory.png" alt="국토정중앙천문대" class="dest-img">
+          <span class="dest-tag">천문 우주</span>
+        </div>
+        <div class="dest-info">
+          <h3>국토정중앙천문대</h3>
+          <p>우리나라 국토의 지리적 정중앙에서 밤하늘의 낭만을 관측할 수 있는 곳입니다. 천체 투영실의 우주 입체 영상실과 거대한 망원경을 통해 성운과 성단을 탐색하는 모험을 선사합니다.</p>
+          <a href="#map" class="dest-link">
+            자세히 보기 
+            <svg viewBox="0 0 24 24"><path d="M8.59 16.59L13.17 12 8.59 7.41 10 6l6 6-6 6-1.41-1.41z"/></svg>
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==========================================
+       SPECIALTIES SECTION
+       ========================================== -->
+  <section class="container reveal" id="specialties">
+    <div class="text-center">
+      <span class="section-tag">Local Products</span>
+      <h2 class="section-title">양구의 명품 특산물</h2>
+      <p class="section-desc">일교차가 크고 기후가 청정한 양구의 대자연이 키워내어 영양과 맛이 일품인 대표 특산물입니다.</p>
+    </div>
+    
+    <div class="specialty-grid">
+      <!-- Specialty 1 -->
+      <div class="spec-card">
+        <span class="spec-icon">🥬</span>
+        <h3>펀치볼 시래기</h3>
+        <p>해안분지의 고지대 서리와 북서풍을 맞고 천천히 건조되어 매우 연하고 고소하며, 식이섬유와 비타민이 풍부한 양구의 일등 공신 특산물입니다.</p>
+      </div>
+      <!-- Specialty 2 -->
+      <div class="spec-card" style="display: flex; flex-direction: column; align-items: center;">
+        <span class="spec-icon">🍃</span>
+        <h3>양구 곰취</h3>
+        <p style="flex-grow: 1;">깊은 산속의 향긋함을 지닌 곰취나물은 부드러운 식감과 특유의 향이 뛰어나 쌈채소, 장아찌 등으로 인기가 좋으며 봄마다 곰취 축제가 펼쳐집니다.</p>
+        <a href="#gomchwi" class="dest-link" style="margin-top: 15px; font-size: 0.8rem;">자세히 보기 &rarr;</a>
+      </div>
+      <!-- Specialty 3 -->
+      <div class="spec-card">
+        <span class="spec-icon">🍈</span>
+        <h3>양구 멜론</h3>
+        <p>분지 특유의 풍부한 일조량과 극심한 주야간 온도차 덕분에 높은 당도를 자랑하며, 육질이 부드러워 프리미엄 과일로 전국에서 호평을 받습니다.</p>
+      </div>
+      <!-- Specialty 4 -->
+      <div class="spec-card">
+        <span class="spec-icon">🍎</span>
+        <h3>펀치볼 사과</h3>
+        <p>맑고 일교차가 큰 해안 펀치볼 고지대에서 자라 과육이 매우 단단하고 당도와 산도의 밸런스가 뛰어나 한 번 맛보면 잊을 수 없는 맛입니다.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==========================================
+       GOMCHWI FEATURED SHOWCASE
+       ========================================== -->
+  <section class="gomchwi-showcase-section" id="gomchwi">
+    <div class="container reveal">
+      <div class="gomchwi-grid">
+        <div class="gomchwi-img-wrap">
+          <img src="assets/gomchwi.png" alt="양구 곰취" class="gomchwi-img">
+          <div class="gomchwi-badge">봄의 전령사</div>
+        </div>
+        <div class="gomchwi-text-wrap">
+          <span class="section-tag">Premium Specialty</span>
+          <h2 class="section-title text-left-title">대암산이 키워낸 곰취</h2>
+          <p class="gomchwi-intro">대암산(1,304m) 자락의 서늘한 기후와 맑은 물, 유기질이 풍부한 토양에서 자라는 양구 곰취는 잎이 부드럽고 특유의 은은한 향과 쌉싸름한 맛이 특징입니다. 해마다 5월이면 전국에서 미식가들이 몰려드는 <strong>'양구 곰취축제'</strong>가 성대하게 열립니다.</p>
+          
+          <ul class="gomchwi-features">
+            <li>
+              <span class="g-feature-icon">🍃</span>
+              <div class="g-feature-info">
+                <h4>최상의 품질과 향</h4>
+                <p>대암산 고지대에서 재배되어 잎이 연하며, 다른 지역 곰취에 비해 향이 매우 진하고 오랫동안 유지됩니다.</p>
+              </div>
+            </li>
+            <li>
+              <span class="g-feature-icon">💚</span>
+              <div class="g-feature-info">
+                <h4>자연이 선물한 건강</h4>
+                <p>비타민 C, 베타카로틴, 칼슘이 풍부하여 노화 방지, 피로 해소, 혈액 순환 개선에 우수한 웰빙 식품입니다.</p>
+              </div>
+            </li>
+            <li>
+              <span class="g-feature-icon">🍽️</span>
+              <div class="g-feature-info">
+                <h4>다양한 즐김 방법</h4>
+                <p>신선한 삼겹살 쌈밥은 물론, 곰취 장아찌, 곰취 찐빵, 곰취 전 등 다채로운 로컬 푸드로 사계절 내내 식탁을 채웁니다.</p>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==========================================
+       INTERACTIVE QUIZ SECTION (Travel Recommender)
+       ========================================== -->
+  <section class="quiz-section" id="quiz">
+    <div class="container reveal">
+      <div class="text-center">
+        <span class="section-tag">Interactive Quiz</span>
+        <h2 class="section-title">나에게 어울리는 양구 여행지 찾기</h2>
+        <p class="section-desc">간단한 3가지 질문을 통해 당신의 여행 성향에 딱 맞는 양구의 테마 여행 코스를 추천받아 보세요.</p>
+      </div>
+      
+      <div class="quiz-container">
+        <div class="quiz-progress-bar" id="quiz-progress"></div>
+        
+        <!-- Step 1 -->
+        <div class="quiz-step active">
+          <div class="quiz-question">Q1. 여행할 때 당신이 가장 중요하게 생각하는 것은 무엇인가요?</div>
+          <div class="quiz-options">
+            <div class="quiz-option" data-cat="healing">
+              <span class="quiz-option-num">1</span>
+              <span>북적이는 도시를 벗어나 숲의 공기와 물소리를 들으며 휴식하기</span>
+            </div>
+            <div class="quiz-option" data-cat="culture">
+              <span class="quiz-option-num">2</span>
+              <span>감성 가득한 미술 전시를 보거나 고요한 곳에서 별구경하기</span>
+            </div>
+            <div class="quiz-option" data-cat="history">
+              <span class="quiz-option-num">3</span>
+              <span>독특한 풍경을 마주하고 생동감 있는 역사 유적 탐방하기</span>
+            </div>
+          </div>
+        </div>
+        
+        <!-- Step 2 -->
+        <div class="quiz-step">
+          <div class="quiz-question">Q2. 양구에 도착해서 가장 맛보고 싶은 먹거리는?</div>
+          <div class="quiz-options">
+            <div class="quiz-option" data-cat="healing">
+              <span class="quiz-option-num">1</span>
+              <span>자연의 기운이 가득한 봄철 향긋한 곰취 쌈밥정식</span>
+            </div>
+            <div class="quiz-option" data-cat="culture">
+              <span class="quiz-option-num">2</span>
+              <span>달콤하고 풍부한 육즙을 자랑하는 고당도 양구 메론</span>
+            </div>
+            <div class="quiz-option" data-cat="history">
+              <span class="quiz-option-num">3</span>
+              <span>찬 바람을 이겨낸 구수한 펀치볼 시래기 감자탕</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Step 3 -->
+        <div class="quiz-step">
+          <div class="quiz-question">Q3. 여행을 끝내고 집에 돌아갈 때 가져가고 싶은 감정은?</div>
+          <div class="quiz-options">
+            <div class="quiz-option" data-cat="healing">
+              <span class="quiz-option-num">1</span>
+              <span>지친 마음을 완전히 비워낸 맑고 평온한 정서</span>
+            </div>
+            <div class="quiz-option" data-cat="culture">
+              <span class="quiz-option-num">2</span>
+              <span>아름다운 예술 작품과 밤하늘을 보며 채워진 깊은 예술적 감성</span>
+            </div>
+            <div class="quiz-option" data-cat="history">
+              <span class="quiz-option-num">3</span>
+              <span>대한민국의 살아있는 안보 현장을 체험했다는 뿌듯함</span>
+            </div>
+          </div>
+        </div>
+        
+        <!-- Result Page -->
+        <div class="quiz-step" id="quiz-result">
+          <div class="quiz-result">
+            <div class="quiz-result-badge">결과 로딩 중...</div>
+            <h3 class="quiz-result-title">추천 여행 스타일</h3>
+            <p class="quiz-result-desc">여행 스타일 설명이 들어가는 자리입니다.</p>
+            
+            <div class="quiz-result-attraction">
+              <img src="" alt="추천 명소" class="quiz-result-img">
+              <div class="quiz-result-info">
+                <h4>명소 이름</h4>
+                <p>명소 간략 설명</p>
+              </div>
+            </div>
+            
+            <button class="quiz-restart-btn">테스트 다시 하기</button>
+          </div>
+        </div>
+        
+      </div>
+    </div>
+  </section>
+
+  <!-- ==========================================
+       GALLERY SECTION
+       ========================================== -->
+  <section class="container reveal" id="gallery">
+    <div class="text-center">
+      <span class="section-tag">Visual Gallery</span>
+      <h2 class="section-title">아름다운 양구의 풍경</h2>
+      <p class="section-desc">오염되지 않은 순수한 대자연의 계절별 파노라마를 사진으로 만나보세요.</p>
+    </div>
+    
+    <div class="gallery-slider-container">
+      <div class="gallery-slider" id="gallery-slider">
+        <div class="gallery-slide">
+          <img src="assets/hero_bg.png" alt="양구 소양호의 일출">
+          <div class="gallery-caption">
+            <h3>소양호의 아침 안개</h3>
+            <p>산자락 사이로 부드럽게 흐르는 물안개와 금빛 태양이 만들어낸 장엄한 해돋이 풍경</p>
+          </div>
+        </div>
+        <div class="gallery-slide">
+          <img src="assets/dutayeon.png" alt="두타연 폭포">
+          <div class="gallery-caption">
+            <h3>두타연 계곡</h3>
+            <p>천연의 울창한 수림 사이로 투명한 에메랄드빛 폭포가 쉼 없이 흘러내리는 힐링 쉼터</p>
+          </div>
+        </div>
+        <div class="gallery-slide">
+          <img src="assets/punchbowl.png" alt="양구 해안분지 펀치볼 전경">
+          <div class="gallery-caption">
+            <h3>해안분지 펀치볼</h3>
+            <p>산에 둘러싸여 마치 거대한 분화구 형태를 취하고 있어 지리학적으로도 신비로운 분지</p>
+          </div>
+        </div>
+        <div class="gallery-slide">
+          <img src="assets/observatory.png" alt="밤하늘 천문대">
+          <div class="gallery-caption">
+            <h3>국토정중앙천문대의 별빛 밤하늘</h3>
+            <p>한반도의 배꼽 지점에서 별들이 쏟아져 내리는 웅장한 밤하늘의 우주 은하수</p>
+          </div>
+        </div>
+      </div>
+      
+      <button class="slider-nav slider-prev" id="slider-prev" aria-label="이전 사진">
+        <svg viewBox="0 0 24 24"><path d="M15.41 7.41L14 6l-6 6 6 6 1.41-1.41L10.83 12z"/></svg>
+      </button>
+      <button class="slider-nav slider-next" id="slider-next" aria-label="다음 사진">
+        <svg viewBox="0 0 24 24"><path d="M8.59 16.59L13.17 12 8.59 7.41 10 6l6 6-6 6-1.41-1.41z"/></svg>
+      </button>
+      
+      <div class="slider-dots" id="slider-dots"></div>
+    </div>
+  </section>
+
+  <!-- ==========================================
+       MAP & TRAVEL GUIDE SECTION
+       ========================================== -->
+  <section class="container reveal" id="map">
+    <div class="text-center">
+      <span class="section-tag">Interactive Map</span>
+      <h2 class="section-title">스마트 관광 지도</h2>
+      <p class="section-desc">지도 위의 주요 핀을 클릭하시면 상세 관광 가이드 정보를 보실 수 있습니다.</p>
+    </div>
+    
+    <div class="map-grid">
+      <div class="map-visual-container">
+        <!-- SVG Vector Map -->
+        <svg viewBox="0 0 400 400" class="map-svg-wrap">
+          <!-- Background aesthetics -->
+          <circle cx="200" cy="200" r="180" fill="none" stroke="rgba(61, 224, 173, 0.15)" stroke-width="1" stroke-dasharray="5,5"/>
+          <circle cx="200" cy="200" r="120" fill="none" stroke="rgba(61, 224, 173, 0.1)" stroke-width="1"/>
+          <line x1="200" y1="20" x2="200" y2="380" stroke="rgba(61, 224, 173, 0.1)" stroke-width="1" stroke-dasharray="2,2"/>
+          <line x1="20" y1="200" x2="380" y2="200" stroke="rgba(61, 224, 173, 0.1)" stroke-width="1" stroke-dasharray="2,2"/>
+          
+          <!-- Stylized Yanggu Map path -->
+          <path d="M 160 80 Q 200 60 250 80 T 320 120 T 340 180 T 290 260 T 260 320 T 180 340 T 100 290 T 80 200 T 110 120 Z" class="map-region" />
+          
+          <!-- Map Pins -->
+          <!-- Dutayeon (Top-Left) -->
+          <g class="map-pin active" data-target="dutayeon" transform="translate(150, 130)">
+            <circle cx="0" cy="0" r="8" class="map-pin-circle"/>
+            <text x="0" y="-15" class="map-pin-label">두타연</text>
+          </g>
+          <!-- Punchbowl (Top-Right) -->
+          <g class="map-pin" data-target="punchbowl" transform="translate(270, 150)">
+            <circle cx="0" cy="0" r="8" class="map-pin-circle"/>
+            <text x="0" y="-15" class="map-pin-label">펀치볼</text>
+          </g>
+          <!-- Museum (Center-Left) -->
+          <g class="map-pin" data-target="museum" transform="translate(150, 230)">
+            <circle cx="0" cy="0" r="8" class="map-pin-circle"/>
+            <text x="0" y="-15" class="map-pin-label">박수근미술관</text>
+          </g>
+          <!-- Observatory (Center-Right) -->
+          <g class="map-pin" data-target="observatory" transform="translate(230, 260)">
+            <circle cx="0" cy="0" r="8" class="map-pin-circle"/>
+            <text x="0" y="-15" class="map-pin-label">국토정중앙천문대</text>
+          </g>
+        </svg>
+      </div>
+      
+      <!-- Info Details Panel -->
+      <div class="map-info-pane" id="map-info-pane">
+        <h3 id="map-info-title">두타연 (Dutayeon Valley)</h3>
+        <p id="map-info-desc">금강산에서 흘러내린 맑은 물이 기암괴석 사이로 떨어지며 이룬 명소로, 60여 년간 가려졌던 아름다운 DMZ 청정 생태계를 간직하고 있습니다. 한국에서 보기 드문 열목어의 최대 서식지이기도 합니다.</p>
+        
+        <div class="map-info-meta">
+          <div class="meta-item">
+            <span class="meta-label">위치 주소</span>
+            <span class="meta-value" id="meta-val-1">강원특별자치도 양구군 방산면 고방산리</span>
+          </div>
+          <div class="meta-item">
+            <span class="meta-label">이용 안내</span>
+            <span class="meta-value" id="meta-val-2">사전 예약 또는 당일 출입 신청 가능 (신분증 필수)</span>
+          </div>
+          <div class="meta-item">
+            <span class="meta-label">운영 조건</span>
+            <span class="meta-value" id="meta-val-3">연중무휴 (매주 월요일 휴무)</span>
+          </div>
+          <div class="meta-item">
+            <span class="meta-label">기타 정보</span>
+            <span class="meta-value" id="meta-val-4">양구 시내에서 차량으로 약 30분 소요</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==========================================
+       FOOTER
+       ========================================== -->
+  <footer>
+    <div class="container" style="padding: 0 0 30px 0;">
+      <div class="footer-grid">
+        <div class="footer-about">
+          <div class="footer-logo">YANGGU<span>.</span></div>
+          <p>한반도의 배꼽이자 때 묻지 않은 생태계의 보고, 양구군. 자연과 인간의 조화로운 공존을 추구하며 여러분의 소중한 여정을 함께합니다.</p>
+        </div>
+        
+        <div>
+          <h4 class="footer-title">빠른 링크</h4>
+          <ul class="footer-links">
+            <li><a href="#about">양구 소개</a></li>
+            <li><a href="#destinations">추천 명소</a></li>
+            <li><a href="#specialties">특산물</a></li>
+            <li><a href="#quiz">여행지 추천 테스트</a></li>
+          </ul>
+        </div>
+        
+        <div class="footer-contact">
+          <h4 class="footer-title">연락처 및 위치</h4>
+          <p>
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"/></svg>
+            강원특별자치도 양구군 양구읍 관공서로 38
+          </p>
+          <p>
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20.01 15.38c-1.23 0-2.42-.2-3.53-.57-.35-.11-.74-.03-1.02.24l-2.2 2.2c-2.83-1.44-5.15-3.75-6.59-6.59l2.2-2.21c.28-.26.36-.65.25-1C8.7 6.45 8.5 5.25 8.5 4c0-.55-.45-1-1-1H4c-.55 0-1 .45-1 1 0 9.39 7.61 17 17 17 .55 0 1-.45 1-1v-3.5c0-.55-.45-1-1-1z"/></svg>
+            033-480-2114 (양구군청 대표번호)
+          </p>
+        </div>
+      </div>
+      
+      <div class="footer-bottom">
+        <p>&copy; 2026 Yanggu Tour. All rights reserved. Created for premium web presentation.</p>
+        <div class="social-links">
+          <a href="#" class="social-icon" aria-label="Facebook">
+            <svg viewBox="0 0 24 24"><path d="M19 3a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h14m-.5 15.5v-5.3a3.26 3.26 0 0 0-3.26-3.26c-.85 0-1.84.52-2.32 1.3v-1.11h-2.79v8.37h2.79v-4.93c0-.77.62-1.4 1.39-1.4a1.4 1.4 0 0 1 1.4 1.4v4.93h2.79z"/></svg>
+          </a>
+          <a href="#" class="social-icon" aria-label="Instagram">
+            <svg viewBox="0 0 24 24"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zM12 0C8.741 0 8.333.014 7.053.072 2.695.272.273 2.69.073 7.051.014 8.333 0 8.741 0 12c0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98C15.668.014 15.259 0 12 0zm0 5.838a6.162 6.162 0 1 0 0 12.324 6.162 6.162 0 0 0 0-12.324zM12 16a4 4 0 1 1 0-8 4 4 0 0 1 0 8zm6.406-11.845a1.44 1.44 0 1 0 0 2.881 1.44 1.44 0 0 0 0-2.881z"/></svg>
+          </a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="app.js"></script>
+</body>
+</html>
